@@ -1,0 +1,655 @@
+.header {
+    background: url(./imeg/business-meeting.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>.navHeader {
+        margin-top: 2%;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+
+        &>.logo {
+            font-size: 35px;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        &>.menu {
+            font-size: 18px;
+            display: flex;
+
+            justify-content: space-between;
+
+            @media(max-width:1122px) {
+                display: none;
+            }
+
+
+            &>div {
+                margin-right: 50px;
+                font-size: 25px;
+                color: rgb(209, 135, 86);
+                font-weight: bold;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                &:hover {
+                    color: cadetblue;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &>.searc {
+            @media(max-width:1122px) {
+                content: url(./imeg/menu.png);
+                width: 40px;
+            }
+
+            color: white;
+
+        }
+
+
+    }
+
+    &>.subHeader {
+
+        &>.containerHeader {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: start;
+            height: 600px;
+
+            &>h1 {
+                color: rgb(166, 216, 191);
+                width: 60%;
+                font-size: 48px;
+                text-align: center;
+            }
+
+            &>.subHeaderBtn {
+                background-color: transparent;
+                margin-top: 20%;
+                width: 250px;
+                font-size: 22px;
+                padding: 15px;
+                border-radius: 20px;
+                color: rgb(140, 134, 134);
+                transition: all 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: rgb(166, 216, 191);
+                }
+
+            }
+
+        }
+
+    }
+}
+
+.main {
+    // background-color: rgb(70, 95, 78);
+    display: flex;
+    justify-content: center;
+    background-color: rgb(55, 70, 60);
+
+    &>.oneContainerMain {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+
+        &>p {
+            color: yellow;
+        }
+
+        &>h2 {
+            color: rgb(245, 244, 242);
+        }
+
+        &>.blokContainerMain {
+            display: flex;
+
+            @media (max-width:1070px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &>.boxWrappeer {
+                text-align: center;
+                border-radius: 2em;
+                margin: 20px;
+                padding: 50px;
+                background-color: rgb(63, 96, 97);
+                box-shadow: 5px 5px 15px 5px #161a16;
+                transition: all 0.5s;
+
+                &:hover {
+                    transform: scale(1.3);
+                    z-index: 3;
+                }
+
+                &>h3 {
+                    color: rgb(31, 39, 39);
+                    font-size: 32px;
+                }
+
+                &>p {
+                    color: rgb(249, 213, 213);
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &>.oneContainerBtn {
+            margin: 50px;
+            padding: 10px;
+            width: 150px;
+            border-radius: 30px;
+            font-weight: bold;
+            background-color: yellow;
+            transition: all 0.5s;
+
+            &:hover {
+                cursor: pointer;
+                color: white;
+                background-color: transparent;
+            }
+        }
+
+        &>h4 {
+            font-size: 20px;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        &>h2 {
+            text-align: center;
+            font-size: 40px;
+            width: 60%;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        &>.twoContainerMain {
+
+
+            &>.imgSection {
+                display: flex;
+                justify-content: space-between;
+
+                &>.imgSize {
+                    @media(max-width:1050px) {
+                        display: none;
+                    }
+                }
+
+                &>.textImegSection {
+                    width: 38%;
+
+                    &>p {
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        color: rgb(255, 254, 253);
+                        font-size: 18px;
+                        width: 500px;
+                        margin-bottom: 5%;
+                        font-size: 20px;
+
+                        @media (max-width:1300px) {
+                            margin-left: 30px;
+                            width: 200px;
+                            font-size: 16px;
+                        }
+                    }
+
+                    &>.imgSectionBtn {
+                        background-color: transparent;
+                        margin-top: 10%;
+                        margin-left: 20%;
+                        width: 250px;
+                        font-size: 22px;
+                        padding: 15px;
+                        border-radius: 20px;
+                        color: rgb(249, 246, 246);
+                        transition: 1s;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: white;
+                            transform: scale(1.4);
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+
+        &>.threeContainerMain {
+            margin-bottom: 50px;
+
+            display: flex;
+            justify-content: space-between;
+
+            &>.boxContainer {
+                display: flex;
+                justify-content: space-around;
+
+                &>.subBox {
+                    width: 50%;
+
+                    &>h5 {
+                        color: white;
+                        font-size: 25px;
+                    }
+
+                    &>p {
+                        font-size: 20px;
+                        color: gray;
+
+                    }
+                }
+
+                &>.numberBox1 {
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    font-size: 5em;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+
+            }
+
+            &>.imgThreeContainer {
+                @media(max-width:1300px) {
+                    display: none;
+
+                }
+            }
+        }
+
+        &>.fourContainerMain {
+            margin: 80px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            @media(max-width:730px) {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &>.box {
+
+                &>h3 {
+                    color: rgb(31, 39, 39);
+                    font-size: 2em;
+                }
+
+                box-shadow: -2px 3px 11px 14px rgba(0, 0, 0, 0.39);
+                background-color: rgb(63, 96, 97);
+                text-align: center;
+                padding: 40px;
+
+                &>.price {
+                    font-size: 42px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+
+                &>div {
+
+                    margin-top: 40px;
+                    color: rgb(232, 224, 224);
+
+                    &>.bi-check2 {
+                        padding-right: 5px;
+                        color: brown;
+                    }
+                }
+
+                &>.boxBtn {
+                    margin: 30px;
+                    width: 60%;
+                    padding: 15px;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: white;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        &>.fiveContainer {
+            margin: 80px;
+
+            display: flex;
+            justify-content: space-between;
+
+            @media(max-width:1050px) {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            &>.clientBlok1 {
+                padding: 30px;
+                background-color: white;
+
+                @media(max-width:1050px) {
+                    margin-bottom: 50px;
+                }
+
+                &>.headerBlok {
+                    display: flex;
+
+
+                    &>.imgClient {
+                        margin-right: 5px;
+                        margin-top: 25px;
+                    }
+
+                    &>.star {
+                        margin-left: 50px;
+                        display: flex;
+                        align-self: center;
+
+                        &>div {
+                            &>.activ {
+
+                                fill: orange;
+                            }
+
+                        }
+                    }
+
+                }
+
+                &>p {
+                    font-size: 20px;
+                    width: 400px;
+
+                }
+            }
+        }
+
+        &>.circle {
+            margin: 80px;
+            display: flex;
+
+            &>div {
+                margin-right: 10px;
+            }
+        }
+
+        &>.sixContainer {
+            display: flex;
+
+            @media (max-width:1300px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+            }
+
+            &>.box1 {
+                padding: 10px;
+
+                margin-right: 10px;
+
+                &>.date {
+                    font-size: 18px;
+                    color: gray;
+                }
+
+                &>h3 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 28px;
+                    color: rgba(41, 45, 59, 0.956);
+                }
+
+                &>.textBox1 {
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 22px;
+                    color: rgb(32, 36, 44);
+                }
+
+                &>.subTextbox {
+                    font-size: 20px;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    color: rgb(156, 149, 136);
+
+                }
+
+            }
+        }
+
+        &>.subSixContainerBtn {
+            background-color: transparent;
+            margin-bottom: 10%;
+            width: 250px;
+            font-size: 22px;
+            padding: 15px;
+            border-radius: 20px;
+            color: rgb(249, 246, 246);
+            transition: 0.5s;
+
+            &:hover {
+                cursor: pointer;
+                background-color: rgb(156, 149, 136);
+                color: black;
+            }
+
+        }
+    }
+
+}
+
+footer {
+    &>.footerCover {
+        background-image: url(./imeg/how_to_run_an_effective_business_meeting_-_a_step-by-step_guide.jpg__1200x630_q90_crop_subject_location-420\,304_subsampling-2_upscale.jpg);
+        background-size: cover;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .footerWrapper {
+            background-color: rgb(55, 70, 60);
+
+            text-align: center;
+            width: 40%;
+
+            &>h3 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 26px;
+                color: bisque;
+            }
+
+            &>h2 {
+                margin: 70px;
+                color: white;
+                font-size: 20px;
+            }
+
+            &>button {
+                @media(max-width:630px) {
+                    width: 150px;
+                }
+
+                background-color:bisque;
+                margin-bottom: 10%;
+                width: 250px;
+                font-size: 22px;
+                padding: 15px;
+                border-radius: 20px;
+                color:black;
+                transition: 0.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    color: white;
+                    background-color: transparent;
+                }
+            }
+
+
+        }
+    }
+
+    &>.subFooter {
+        background-color: rgba(11, 11, 11, 0.864);
+        padding: 60px 0;
+        display: flex;
+        justify-content: center;
+
+        &>.subFooterSize {
+            display: flex;
+
+            width: 80%;
+            font-size: 18px;
+            color: white;
+
+            &>.logoFooterWrapper {
+                &>.logoFooter {
+                    font-size: 32px;
+                    margin: 10px 0px;
+                }
+
+                &>.inputFooter {
+                    margin-top: 40px;
+                    background-color: white;
+                    width: 280px;
+
+                    border-radius: 2em;
+
+                    &>input {
+                        border: none;
+                    }
+
+                    &>button {
+
+                        width: 110px;
+                        height: 50px;
+                        padding: 20px 20px 30px 20px;
+                        color: white;
+                        border-radius: 2em;
+                        background-color: darkblue;
+                    }
+                }
+
+                &>.text {
+                    margin-top: 20px;
+                    width: 70%;
+                }
+
+            }
+
+            &>.nav {
+
+                margin-right: 30px;
+
+                &>.headerLink {
+                    width: 100px;
+                    margin: 10px 0;
+                    color: #bbbebb;
+                }
+
+                &>div {
+                    font-size: 20px;
+                    margin-top: 5px;
+                }
+
+            }
+
+            &>.navContinue {
+                @media(max-width: 900px) {
+                    display: none;
+                }
+
+                margin-right: 10px;
+
+                margin-top: 40px;
+                font-size: 20px;
+            }
+
+            &>.recentPost {
+                margin-top: 10px;
+                display: flex;
+
+                &>.imgBlok {
+                    @media (max-width:1300px) {
+                        display: none;
+                    }
+
+                    &>.imgBox {
+                        display: flex;
+
+                        &>div {
+                            margin: 10px;
+                        }
+
+                        &>.postDate {
+                            &>.date {
+                                color: grey;
+                            }
+                        }
+                    }
+
+
+                    &>.imgBox1 {
+
+                        display: flex;
+
+                        &>div {
+                            margin: 10px;
+                        }
+
+                        &>.postDate {
+                            &>.date {
+                                color: grey;
+                            }
+                        }
+
+
+                    }
+
+                }
+
+                &>.infoBlok {
+                    @media(max-width: 720px) {
+                        display: none;
+                    }
+
+                    margin-left: 30px;
+
+                    &>.email {
+                        margin-bottom: 10px;
+                    }
+
+                    &>.icon {
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin-top: 10px;
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+}
